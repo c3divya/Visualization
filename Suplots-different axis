@@ -1,0 +1,31 @@
+fix,((ax1,ax2),(ax4,ax5))=plt.subplots(2,2)
+fig.subplots_adjust(left=0.2, wspace=0.6)
+
+ax1.plot(x1,y1,marker='o')
+ax1.set_title('Range 10-100')
+ax1.set_ylabel('Count')
+ax1.set_ylim(1,100)
+plt.setp(ax1.xaxis.get_majorticklabels(), rotation=30,horizontalalignment='right')
+
+ax2.plot(x2,y2,marker='o')
+ax2.set_title('Range 100-600')
+ax2.set_ylabel('Count')
+ax2.set_ylim(100,600)
+plt.setp(ax2.xaxis.get_majorticklabels(), rotation=30,horizontalalignment='right')
+# ax3.plot(x3,y3,marker='o')
+# ax3.set_title('Range 600-900')
+# ax3.set_ylabel('Count')
+# ax3.set_ylim(600,900)
+
+ax4.plot(x4,y4,marker='o')
+ax4.set_title('Range 1100-1400')
+ax4.set_ylabel('Count')
+ax4.set_ylim(1000,1400)
+
+ax5.plot(x5,y5,marker='o')
+ax5.set_title('Range 2000-6000')
+ax5.set_ylabel('Count')
+ax5.set_ylim(2000,6000)
+
+
+plt.show()
